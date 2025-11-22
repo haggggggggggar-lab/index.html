@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي التجريبي</title>
+
+    <!-- Meta Pixel Code (سليم 100%) -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1412920180336744');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1412920180336744&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <style>
+        body { font-family: Arial; background: #f5f5f5; padding: 20px; direction: rtl; }
+        .box { background: white; padding: 20px; max-width: 700px; margin: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        button { padding: 12px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px; margin: 8px 0; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>موقع تجريبي – Meta Pixel</h1>
+        <p>اضغط أي زر لتسجيل حدث في Pixel.</p>
+
+        <button onclick="fbq('track','Button1'); alert('تم تسجيل Button1');">زر 1</button>
+        <button onclick="fbq('track','Button2'); alert('تم تسجيل Button2');">زر 2</button>
+        <button onclick="fbq('track','Button3'); alert('تم تسجيل Button3');">زر 3</button>
+        <button onclick="fbq('track','Button4'); alert('تم تسجيل Button4');">زر 4</button>
+        <button onclick="fbq('track','Button5'); alert('تم تسجيل Button5');">زر 5</button>
+
+        <h2>نموذج</h2>
+        <form onsubmit="fbq('track', 'FormSubmit'); alert('تم إرسال النموذج!'); return false;">
+            <input type="text" placeholder="اسمك" required style="width:100%; padding:10px; margin:8px 0;">
+            <input type="email" placeholder="الإيميل" required style="width:100%; padding:10px; margin:8px 0;">
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
